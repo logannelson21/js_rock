@@ -6,34 +6,35 @@ return choices [Math.floor(Math.random()*choices.length)];
 
 /* Player vs Computer Round 1 */
 
-function playIt(playerSelection, computerSelection){
+function playIt(playerSelection, computerSelection) {
+    let log = '';
     
     if (playerSelection === 'rock') {
-     if (computerSelection === 'paper'){
+     if (computerSelection === 'paper') {
          log = 'You lose! Paper destroys rock.';
-     } else if (computerSelection === 'scissors'){
+     } else if (computerSelection === 'scissors') {
          log = 'You win! Rock smashes scissors.';
-         else {
-             log = 'You tied!';
+     } else {
+             log = "You tied!";
          }
-     }
+     
     }
-} else if (playerSelection === 'paper'){
-    if (computerSelection === 'rock'){
+} else if (playerSelection === 'paper') {
+    if (computerSelection === 'rock') {
         log = 'You win! Paper destroys rock.';
-    } else if (computerSelection === 'scissors'){
+    } else if (computerSelection === 'scissors') {
         log = 'You lose! Scissors slice paper';
-        else {
-            log = 'You tied!';
+     } else {
+            log = "You tied!";
         }
     }
-} else if (playerSelection === 'scissors'){
-    if (computerSelection === 'rock'){
+ else if (playerSelection === 'scissors') {
+    if (computerSelection === 'rock') {
         log = 'You lose! Rock smashes scissors';
-        else if (computerSelection === 'paper'){
+         else if (computerSelection === 'paper') {
             log = 'You win! Scissors slice paper';
             else {
-                log = 'You tied!';
+                log = "You tied!";
             }
         }
     }
