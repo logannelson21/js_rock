@@ -7,6 +7,9 @@ return choices [Math.floor(Math.random()*choices.length)];
 
 /* Player vs Computer */
 
+let playerScore = 0;
+let computerScore = 0;
+
 function playRound(playerSelection, computerSelection) {
     let log = '';
     
@@ -44,9 +47,16 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 
-    function game(playerSelect) {
-        let  = capitalize(playerSelect);
-        let  = getComputerChoice();
+    function game(playRound) {
+        let playerSelection = capitalize(playerSelect);
+        let computerSelection = getComputerChoice();
+
+        let roundResult = playRound(playerSelection, computerSelection);
+
+        if (roundResult.search('You win!') > -1){
+            playerScore
+        }
+
     }
 
 
