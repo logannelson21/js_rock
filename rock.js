@@ -11,7 +11,7 @@ return choice;
 
 function checkWinner(playerSelection , computerSelection){
     if(playerSelection == computerSelection){
-        return "You Tied!";
+        return "Tie";
     } else if(
         (playerSelection == "rock" && computerSelection == "scissors") ||
         (playerSelection == "scissors" && computerSelection == "paper")||
